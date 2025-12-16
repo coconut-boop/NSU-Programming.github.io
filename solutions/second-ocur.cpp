@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     // TODO
     int i;
-    int bin = 0;  // Инициализируем переменную
+    int bin = 0;
     string s;
     cin >> s;
     int len = s.length();
@@ -13,17 +13,17 @@ int main() {
         if (s[i] == 'f') {
             bin++;
             if (bin == 2) {
-                cout << i << endl;
+                cout << i;
                 return 0;
             }
         }
     }
-    // Если цикл завершился без нахождения второго 'f'
+
     if (bin == 0) {
-        cout << -2 << endl;
+        cout << -2;
     }
     else if (bin == 1) {
-        cout << -1 << endl;
+        cout << -1;
     }
     return 0;
 }
